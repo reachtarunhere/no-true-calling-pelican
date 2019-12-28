@@ -45,7 +45,7 @@ skel.init({
 					position: 'top-center',
 					width: 120,
 					height: 50,
-					html: '<span class="toggle" data-action="toggleLayer" data-args="topPanel"></span>'
+					html: '<span class="toggle" data-action="toggleLayer" data-args="topPanel" style="visibility: hidden;></span>'
 				},
 				sidePanel: {
 					states: 'global wide normal narrow narrower',
@@ -63,7 +63,7 @@ skel.init({
 					position: 'top-left',
 					width: 100,
 					height: 60,
-					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span>'
+					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel" style="visibility: hidden;"></span>'
 				}
 			}
 	}
