@@ -1,4 +1,4 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 from pathlib import Path
@@ -35,7 +35,7 @@ DEFAULT_PAGINATION = 4
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME='themes/twenty'
+THEME = 'themes/twenty'
 
 THEME_STATIC_DIR = '.'
 THEME_STATIC_PATHS = ['static']
@@ -45,16 +45,16 @@ THEME_STATIC_PATHS = ['static']
 
 # Custom Filter For Template
 
+
 def sidebar(value):
-  if value.startswith('archives') or value.startswith('category'):
-    return 'right-sidebar'
-  elif value == 'index':
-    return 'index'
-  else:
-    return 'no-sidebar'
+    if value.startswith('archives') or value.startswith('category'):
+        return 'right-sidebar'
+    elif value == 'index':
+        return 'index'
+    else:
+        return 'no-sidebar'
 
 
 JINJA_FILTERS = {'sidebar': sidebar}
 
-
-  
+STATIC_PATHS = ['images']

@@ -8,9 +8,9 @@
 
   <header class="special container">
     <span class="icon fa-pencil"></span>
-    <h2>Archives</h2>
+    <h2>Episodes Archives</h2>
     <!-- add page sub title here -->
-    <p>Archives Template</p>
+    <p>Show notes, transcripts, audio and more</p>
   </header>
 
     <!-- One -->
@@ -22,10 +22,10 @@
                 <div class="content">
                 {% for article in dates %}
                     <section>
-                        <!-- <a href="#" class="image feature"><img src="images/pic03.jpg" alt="" /></a> -->
                         <header>
                             <a href="{{ SITEURL }}/{{ article.url }}"><h3>{{ article.title }}</h3></a>
                         </header>
+                        <a href="#" class="image feature"><img src="images/{{article.cover}}" alt="" /></a> 
                         <p>{{ article.summary|striptags }}</p>
                     </section>
                 {% endfor %}
@@ -39,7 +39,7 @@
                 <div class="sidebar">
                     <section>
                         <header>
-                            <h3>Magna Feugiat</h3>
+                            <h3>About The Podcast</h3>
                         </header>
                         <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
                         <footer>
@@ -52,7 +52,7 @@
                     <section>
                         <a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a>
                         <header>
-                            <h3>Amet Lorem Tempus</h3>
+                            <h3>About Your Hosts</h3>
                         </header>
                         <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
                         <footer>

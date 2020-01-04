@@ -8,14 +8,14 @@
   <div class="row">
 
 
-          {% for article in articles_page.object_list[:4] %}
+          {% for article in articles_page.object_list[1:5] %}
 
 
 
     <div class="6u">
 
       <section>
-        <a href="{{ SITEURL }}/{{ article.url }}" class="image feature"><img src="images/pic01.jpg" alt="" /></a>
+        <a href="{{ SITEURL }}/{{ article.url }}" class="image feature"><img src="images/{{article.cover}}" alt="" /></a>
         <header>
           <h3>{{ article.title }}</h3>
         </header>
